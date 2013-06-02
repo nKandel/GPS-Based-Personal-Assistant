@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content" 
+android:background="#fff">
+
+<LinearLayout
+	android:id="@+id/widget28"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/lblDateAndTime"
+		android:layout_width="fill_parent"
+		android:layout_height="47px"
+		android:textStyle="bold">
+	</TextView>
+	<ImageButton
+		android:src="@drawable/set_date_48"
+		android:id="@+id/btnDate"
+		android:layout_gravity="center"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		 android:layout_marginTop="40dp">
+	</ImageButton>
+	<TextView
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Set Date"
+        	android:layout_gravity="center"
+        	android:textColor="#ff000000"
+        	>
+        </TextView>
+	<ImageButton
+		android:src="@drawable/set_time_48"
+		android:id="@+id/btnTime"
+		android:layout_gravity="center"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		 android:layout_marginTop="50dp">
+	</ImageButton>
+	<TextView
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Set Time"
+        	android:layout_gravity="center"
+        	android:textColor="#ff000000"
+        	>
+        </TextView>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#fff">
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@layout/header_gradient"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+                <!-- Logo Start-->
+                 <ImageView android:src="@drawable/logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"/>
+                <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+        <!-- Footer Start -->
+        <LinearLayout android:id="@+id/footer"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:background="@layout/footer_repeat"
+                android:layout_alignParentBottom="true">
+        </LinearLayout>
+        <!-- Footer Ends --> 
+    <!-- Registration Form -->    
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:padding="10dp"
+	android:layout_below="@id/header">
+
+  
+     <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name" 
+        android:textColor="#372c24"/>
+
+
+
+     <EditText
+         android:id="@+id/edit_name"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dip"
+		  android:singleLine="true"
+		  android:layout_marginBottom="20dip" >
+
+
+	</EditText>
+	
+         <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email" 
+        android:textColor="#372c24"/>
+
+
+     <EditText
+         android:id="@+id/edit_email"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+		 android:singleLine="true"
+		  android:layout_marginBottom="20dip" >
+
+	</EditText>
+	
+   <!--      <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Username" 
+        android:textColor="#372c24"/>
+
+
+       <EditText
+         android:id="@+id/edit_signup_username"
+         android:layout_width="280dp"
+         android:layout_height="wrap_content"
+         android:maxLength="30" >
+
+	</EditText>-->
+	
+         <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/password" 
+        android:textColor="#372c24"/>
+
+
+     <EditText
+         android:id="@+id/edit_signup_password"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:maxLength="30"
+         android:password="true"
+		 android:singleLine="true"
+		 android:layout_marginTop="5dip">
+
+	</EditText>
+
+
+         <Button
+             android:id="@+id/signup"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginTop="10dip"
+		  	android:text="Register New Account"/>
+         
+          <TextView  
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="40dip"
+		  		android:layout_marginBottom="40dip"
+		  		android:gravity="center"
+		  		android:textSize="20dip"
+		  		android:textColor="#025f7c"/>
+         
+</LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

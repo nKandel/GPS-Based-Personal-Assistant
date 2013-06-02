@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.bishal.android.taskmanager"
+      android:versionCode="1"
+      android:versionName="1.0">
+      
+    <uses-sdk android:minSdkVersion="8" />
+      
+    <application android:icon="@drawable/icon"  android:name=".TaskManagerApplication" android:label="@string/app_name">
+       <activity android:name=".GPA_HOME"
+                  android:label="@string/app_name"
+                   >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+        
+            </intent-filter>
+            </activity>
+            
+        <activity android:name=".SpecifyTime" android:text="@string/add_time_to_task"></activity>    
+        <activity android:name=".ViewTasksActivity" android:text="@string/my_schedule" >  </activity>
+        <activity android:name=".AddTaskActivity" android:text="@string/add_task" />
+	    <activity android:name=".AddLocationMapActivity" android:text="@string/add_location_to_task" />
+	    <activity android:name=".AndroidAlarmService" android:text="@string/add_alarm_to_task" />
+	    
+	    <activity
+            android:label="Display location"
+            android:name=".CURRENT_LOCATION" >
+       </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".ACCOUNT_INFO" >
+       </activity>
+       <activity
+            android:label="@string/app_name"
+            android:name=".DbHelper" >
+       </activity>
+        <activity
+            android:label="Welcome to signup page"
+            android:name=".SIGNUP" >
+       </activity>
+       <activity
+            android:label="Welcome to login page"
+            android:name=".LOGIN" >
+       </activity>
+      <activity
+            android:label="Add Schedules"
+            android:name=".SCHEDULES" >
+       </activity>
+       <activity
+            android:label="Add GPS_INFO"
+            android:name=".GPS_INFO" >
+       </activity>
+       <activity
+            android:name=".GPS_FIELD" >
+       </activity>
+       <activity android:name=".AlertDialogManager" /> 
+           
+       
+	   <service android:name=".MyAlarmService" />
+	   <service android:name=".YourAlarmService" />
+	   
+	   <uses-library android:name="com.google.android.maps" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    
+
+</manifest> 

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category" 
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/txt_category"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content" />
+<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description" 
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine" />
+<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude" 
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edit_latitude"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude" 
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edit_longitude"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save" />
+
+</LinearLayout>

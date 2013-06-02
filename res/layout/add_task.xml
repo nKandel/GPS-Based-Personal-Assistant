@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff">
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<TextView 
+		android:id="@+id/tasks_title"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+ 		android:text="@string/add_task"
+	    />
+	<EditText
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/task_name"/>
+	<TextView 
+		android:id="@+id/address_text"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:visibility="gone"
+	    />
+	<ImageButton
+		android:src="@drawable/location_task"
+		android:id="@+id/add_location_button"
+		android:layout_gravity="center"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+ 		android:layout_marginTop="5dp"
+ 		android:text="@string/add_location_to_task"/>
+	<TextView
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Add Location"
+        	android:layout_gravity="center"
+        	android:textColor="#ff000000"
+        	>
+        </TextView>
+	<ImageButton
+	    android:src="@drawable/date_time"
+		android:id="@+id/add_time_button"
+		android:layout_gravity="center"
+		android:layout_marginTop="10dp"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+ 		android:text="@string/add_time_to_task"/>
+	<TextView
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Add Time"
+        	android:layout_gravity="center"
+        	android:textColor="#ff000000"
+        	>
+        </TextView>
+	<ImageButton
+		android:src="@drawable/plan_48"
+		android:id="@+id/add_button"
+		 android:layout_gravity="center"
+ 		android:layout_width="wrap_content"
+ 		android:layout_marginTop="15dp"
+ 		android:layout_height="wrap_content"
+ 		android:text="@string/add_task"/>
+	<TextView
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Add Task"
+        	android:layout_gravity="center"
+        	android:textColor="#ff000000"
+        	>
+        </TextView>
+	<ImageButton
+	    android:src="@drawable/back_48"
+		android:id="@+id/cancel_button"
+		android:layout_marginTop="20dp"
+		 android:layout_gravity="center"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+ 		android:text="@string/cancel"/>
+	<TextView
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Cancel"
+        	android:layout_gravity="center"
+        	android:textColor="#ff000000"
+        	>
+        </TextView>
+</LinearLayout>
+</RelativeLayout>
+</ScrollView>
