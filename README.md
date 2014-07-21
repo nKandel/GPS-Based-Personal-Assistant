@@ -1,4 +1,4 @@
-GPS_Based_Personal_Assistant
+GPS Based Personal Assistant
 ============================
 
 Android App to Assist Person
